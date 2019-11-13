@@ -10,17 +10,21 @@
         fill: black;
       }
     </style>
+
     <script src="https://d3js.org/d3.v5.min.js"></script>
     <script src="https://d3js.org/topojson.v1.min.js"></script>
   </head>
+
   <body>
     <script type="text/javascript">
 
 	  d3.json("https://raw.githubusercontent.com/mactsouk/datasets/master/data.json", function(error, data) {
+		  console.log("Reading Data!");
 		  if (error) throw error;
 	      console.log(data);
 	  });
 	  
     </script>
   </body>
+
 </html>
