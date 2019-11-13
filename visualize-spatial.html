@@ -9,6 +9,12 @@
         stroke-width: 0.5px;
         fill: black;
       }
+	  
+	  .points {
+	        fill: red;
+	          opacity: 0.7;
+      }
+
     </style>
 
     <script src="https://d3js.org/d3.v5.min.js"></script>
@@ -18,21 +24,33 @@
   <body>
     <script type="text/javascript">
 
-		console.log("Reading Data outside!");
+		var width = 500,
+		height = 300;
 
-//	  d3.json("https://raw.githubusercontent.com/mactsouk/datasets/master/data.json", function(error, data) {
-//		  console.log("Reading Data!");
-//		  if (error) throw error;
-//	      console.log(data);
-//	  });
+		var svg = d3.select("body")
+		  .append("svg")
+		  .attr("width", width)
+		  .attr("height", height);
+		var projection = d3.geoAlbers()
+		    .scale(600)
+		    .translate([width / 2, height / 2]);
 
-d3.json("https://raw.githubusercontent.com/mactsouk/datasets/master/data.json")
-.then(data => {
-	console.log("Reading Data!");
-	console.log(data);
-}).
-catch(error => console.log(error));
+		var path = d3.geoPath()
+		   .projection(projection);
 
+		d3.json("https://raw.githubusercontent.com/mactsouk/datasets/master/data.json")
+			.then(data => {
+				console.log("Reading Data!");
+				console.log(data);
+			
+			svg.selectAll('.points')
+			   .data(data.value)
+			   .enter()
+			   .append('path')
+			   .attr('d', path)
+			   .attr('class', 'points');
+
+			}).catch(error => console.log(error));
 	  
     </script>
   </body>
