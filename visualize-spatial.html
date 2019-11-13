@@ -18,11 +18,21 @@
   <body>
     <script type="text/javascript">
 
-	  d3.json("https://raw.githubusercontent.com/mactsouk/datasets/master/exported_data.json", function(error, data) {
-		  console.log("Reading Data!");
-		  if (error) throw error;
-	      console.log(data);
-	  });
+		console.log("Reading Data outside!");
+
+//	  d3.json("https://raw.githubusercontent.com/mactsouk/datasets/master/data.json", function(error, data) {
+//		  console.log("Reading Data!");
+//		  if (error) throw error;
+//	      console.log(data);
+//	  });
+
+d3.json("https://raw.githubusercontent.com/mactsouk/datasets/master/data.json")
+.then(data => {
+	console.log("Reading Data!");
+	console.log(data);
+}).
+catch(error => console.log(error));
+
 	  
     </script>
   </body>
