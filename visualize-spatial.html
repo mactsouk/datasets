@@ -24,31 +24,51 @@
   <body>
     <script type="text/javascript">
 
-		var width = 500,
-		height = 300;
+		var width = 1000;
+		var height = 800;
 
 		var svg = d3.select("body")
 		  .append("svg")
 		  .attr("width", width)
 		  .attr("height", height);
+
 		var projection = d3.geoAlbers()
 		    .scale(600)
 		    .translate([width / 2, height / 2]);
 
 		var path = d3.geoPath()
 		   .projection(projection);
+		   
+		   var svg = d3.select("#map").append("svg")
+	       	.attr("width", width)
+			.attr("height", height);
+
+		   var g = svg.append("g");
+		   
 
 		d3.json("https://raw.githubusercontent.com/mactsouk/datasets/master/data.json")
 			.then(data => {
 				console.log("Reading Data!");
 				console.log(data);
+
+ 		   g.selectAll("path")
+ 	       	.data(data)
+ 			 .enter().append("path")
+ 			   .attr("d", path);
+
 			
-			svg.selectAll('.points')
-			   .data(data.value)
-			   .enter()
-			   .append('path')
-			   .attr('d', path)
-			   .attr('class', 'points');
+		     svg.append("rect").attr('width', width).attr('height', height)
+		        .style('stroke', 'black').style('fill', 'none');
+			
+			 svg.selectAll(".points")
+			   .data(data)
+			   .enter().append("point", ".points")
+			   .attr("transform", function(d) {
+			     return "translate(" + projection([
+			       d.value.longitude,
+			       d.value.latitude
+			     ]) + ")";
+			   });
 
 			}).catch(error => console.log(error));
 	  
