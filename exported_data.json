@@ -1,0 +1,210 @@
+[
+	{
+		"value": {
+			"Latitude": 58.76088333333333,
+			"Longitude": 9.898933333333334
+		},
+		"metadata": {
+			"offset": 0,
+			"partition": 0,
+			"timestamp": 1573586219346,
+			"__keysize": 0,
+			"__valsize": 60
+		}
+	},
+	{
+		"value": {
+			"Latitude": 58.761716666666665,
+			"Longitude": 9.898516666666668
+		},
+		"metadata": {
+			"offset": 1,
+			"partition": 0,
+			"timestamp": 1573586219373,
+			"__keysize": 0,
+			"__valsize": 61
+		}
+	},
+	{
+		"value": {
+			"Latitude": 58.76235,
+			"Longitude": 9.89825
+		},
+		"metadata": {
+			"offset": 2,
+			"partition": 0,
+			"timestamp": 1573586219403,
+			"__keysize": 0,
+			"__valsize": 41
+		}
+	},
+	{
+		"value": {
+			"Latitude": 58.7613,
+			"Longitude": 9.898766666666667
+		},
+		"metadata": {
+			"offset": 3,
+			"partition": 0,
+			"timestamp": 1573586219429,
+			"__keysize": 0,
+			"__valsize": 50
+		}
+	},
+	{
+		"value": {
+			"Latitude": 58.76221666666667,
+			"Longitude": 9.898316666666666
+		},
+		"metadata": {
+			"offset": 4,
+			"partition": 0,
+			"timestamp": 1573586219458,
+			"__keysize": 0,
+			"__valsize": 60
+		}
+	},
+	{
+		"value": {
+			"Latitude": 58.76271666666667,
+			"Longitude": 9.8981
+		},
+		"metadata": {
+			"offset": 5,
+			"partition": 0,
+			"timestamp": 1573586219504,
+			"__keysize": 0,
+			"__valsize": 49
+		}
+	},
+	{
+		"value": {
+			"Latitude": 58.76363333333333,
+			"Longitude": 9.897883333333333
+		},
+		"metadata": {
+			"offset": 6,
+			"partition": 0,
+			"timestamp": 1573586219544,
+			"__keysize": 0,
+			"__valsize": 60
+		}
+	},
+	{
+		"value": {
+			"Latitude": 58.7632,
+			"Longitude": 9.897966666666667
+		},
+		"metadata": {
+			"offset": 7,
+			"partition": 0,
+			"timestamp": 1573586219572,
+			"__keysize": 0,
+			"__valsize": 50
+		}
+	},
+	{
+		"value": {
+			"Latitude": 58.76405,
+			"Longitude": 9.89765
+		},
+		"metadata": {
+			"offset": 8,
+			"partition": 0,
+			"timestamp": 1573586219597,
+			"__keysize": 0,
+			"__valsize": 41
+		}
+	},
+	{
+		"value": {
+			"Latitude": 58.76455,
+			"Longitude": 9.897516666666666
+		},
+		"metadata": {
+			"offset": 9,
+			"partition": 0,
+			"timestamp": 1573586219629,
+			"__keysize": 0,
+			"__valsize": 51
+		}
+	},
+	{
+		"value": {
+			"Latitude": 58.764833333333335,
+			"Longitude": 9.89745
+		},
+		"metadata": {
+			"offset": 10,
+			"partition": 0,
+			"timestamp": 1573586219650,
+			"__keysize": 0,
+			"__valsize": 51
+		}
+	},
+	{
+		"value": {
+			"Latitude": 58.765033333333335,
+			"Longitude": 9.897416666666667
+		},
+		"metadata": {
+			"offset": 11,
+			"partition": 0,
+			"timestamp": 1573586219675,
+			"__keysize": 0,
+			"__valsize": 61
+		}
+	},
+	{
+		"value": {
+			"Latitude": 58.76546666666667,
+			"Longitude": 9.897266666666667
+		},
+		"metadata": {
+			"offset": 12,
+			"partition": 0,
+			"timestamp": 1573586219687,
+			"__keysize": 0,
+			"__valsize": 60
+		}
+	},
+	{
+		"value": {
+			"Latitude": 58.765883333333335,
+			"Longitude": 9.897116666666667
+		},
+		"metadata": {
+			"offset": 13,
+			"partition": 0,
+			"timestamp": 1573586219715,
+			"__keysize": 0,
+			"__valsize": 61
+		}
+	},
+	{
+		"value": {
+			"Latitude": 58.76631666666667,
+			"Longitude": 9.897
+		},
+		"metadata": {
+			"offset": 14,
+			"partition": 0,
+			"timestamp": 1573586219736,
+			"__keysize": 0,
+			"__valsize": 48
+		}
+	},
+	{
+		"value": {
+			"Latitude": 58.766816666666664,
+			"Longitude": 9.896883333333333
+		},
+		"metadata": {
+			"offset": 15,
+			"partition": 0,
+			"timestamp": 1573586219752,
+			"__keysize": 0,
+			"__valsize": 61
+		}
+	}
+]
