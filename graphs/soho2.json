@@ -1,0 +1,68 @@
+{
+  "payload": {
+    "topological_attack_graph": {
+      "arcs": [
+        {
+          "label": "CVE-2017-15906",
+          "src": 1,
+          "dst": 2
+        },
+        {
+          "label": "CVE-2017-15906",
+          "src": 0,
+          "dst": 2
+        }
+      ],
+      "vertices": [
+        {
+          "id": 0,
+          "name": "host-000C292272F2",
+          "target": false,
+          "ip_addresses": [
+            "10.0.10.110"
+          ],
+          "compromised": false,
+          "type": "MACHINE",
+          "source_of_attack": true
+        },
+        {
+          "id": 1,
+          "name": "host-000c29c5f1ce",
+          "target": false,
+          "ip_addresses": [
+            "10.0.10.105"
+          ],
+          "compromised": false,
+          "type": "MACHINE",
+          "source_of_attack": true
+        },
+        {
+          "id": 2,
+          "name": "pfsense",
+          "target": false,
+          "ip_addresses": [
+            "10.0.10.1"
+          ],
+          "compromised": true,
+          "type": "MACHINE",
+          "source_of_attack": true
+        }
+      ]
+    }
+  },
+  "_metadata": {
+    "result": {
+      "message": "The topological attack graph was successfully retrieved.",
+      "status": "OK",
+      "code": 200
+    },
+    "api": "3.2.0"
+  },
+  "header": {
+    "timestamp": 1588770439,
+    "msg_topic": "Internal.iRG.Test",
+    "cor_id": "",
+    "source": "iirs1234.cybertrust.eu",
+    "msg_id": "e5cb9b48-15fd-43ef-8b9b-4815fd83ef08"
+  }
+}

@@ -1,0 +1,68 @@
+{
+    "_metadata": {
+        "api": "3.2.0",
+        "result": {
+            "code": 200,
+            "message": "The topological attack graph was successfully retrieved.",
+            "status": "OK"
+        }
+    },
+    "header": {
+        "cor_id": "",
+        "msg_id": "927f926b-2e63-4ef8-bf92-6b2e639ef8b9",
+        "msg_topic": "Internal.iRG.Test",
+        "source": "iirs1234.cybertrust.eu",
+        "timestamp": 1588642655
+    },
+    "payload": {
+        "topological_attack_graph": {
+            "arcs": [
+                {
+                    "dst": 2,
+                    "label": "CVE-2017-15906",
+                    "src": 1
+                },
+                {
+                    "dst": 2,
+                    "label": "CVE-2017-15906",
+                    "src": 0
+                }
+            ],
+            "vertices": [
+                {
+                    "compromised": false,
+                    "id": 0,
+                    "ip_addresses": [
+                        "10.0.10.110"
+                    ],
+                    "name": "host-000C292272F2",
+                    "source_of_attack": true,
+                    "target": false,
+                    "type": "MACHINE"
+                },
+                {
+                    "compromised": false,
+                    "id": 1,
+                    "ip_addresses": [
+                        "10.0.10.105"
+                    ],
+                    "name": "host-000c29c5f1ce",
+                    "source_of_attack": true,
+                    "target": false,
+                    "type": "MACHINE"
+                },
+                {
+                    "compromised": true,
+                    "id": 2,
+                    "ip_addresses": [
+                        "10.0.10.1"
+                    ],
+                    "name": "pfsense",
+                    "source_of_attack": true,
+                    "target": false,
+                    "type": "MACHINE"
+                }
+            ]
+        }
+    }
+}

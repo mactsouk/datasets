@@ -1,0 +1,126 @@
+{
+  "payload": {
+    "topological_attack_graph": {
+      "arcs": [
+        {
+          "label": "CVE-1999-0519",
+          "src": 1,
+          "dst": 0
+        },
+        {
+          "label": "CVE-1999-0519",
+          "src": 2,
+          "dst": 0
+        },
+        {
+          "label": "CVE-1999-0519",
+          "src": 3,
+          "dst": 0
+        },
+        {
+          "label": "CVE-1999-0519",
+          "src": 4,
+          "dst": 0
+        },
+        {
+          "label": "CVE-1999-0519",
+          "src": 5,
+          "dst": 0
+        },
+        {
+          "label": "CVE-2007-2446",
+          "src": 2,
+          "dst": 5
+        },
+        {
+          "label": "CVE-2007-2446",
+          "src": 4,
+          "dst": 5
+        }
+      ],
+      "vertices": [
+        {
+          "id": 0,
+          "name": "Dmz-1",
+          "target": false,
+          "ip_addresses": [
+            "10.15.10.11"
+          ],
+          "compromised": true,
+          "type": "MACHINE",
+          "source_of_attack": true
+        },
+        {
+          "id": 1,
+          "name": "internet_host",
+          "target": false,
+          "ip_addresses": [],
+          "compromised": false,
+          "type": "MACHINE",
+          "source_of_attack": true
+        },
+        {
+          "id": 2,
+          "name": "router",
+          "target": false,
+          "ip_addresses": [
+            "10.15.10.1",
+            "1.1.2.2",
+            "192.168.1.1"
+          ],
+          "compromised": false,
+          "type": "MACHINE",
+          "source_of_attack": true
+        },
+        {
+          "id": 3,
+          "name": "Dmz-2",
+          "target": false,
+          "ip_addresses": [
+            "10.15.10.14"
+          ],
+          "compromised": true,
+          "type": "MACHINE",
+          "source_of_attack": true
+        },
+        {
+          "id": 4,
+          "name": "linux-user-1",
+          "target": false,
+          "ip_addresses": [
+            "192.168.1.111"
+          ],
+          "compromised": false,
+          "type": "MACHINE",
+          "source_of_attack": true
+        },
+        {
+          "id": 5,
+          "name": "linux-user-2",
+          "target": false,
+          "ip_addresses": [
+            "192.168.1.112"
+          ],
+          "compromised": true,
+          "type": "MACHINE",
+          "source_of_attack": true
+        }
+      ]
+    }
+  },
+  "_metadata": {
+    "result": {
+      "message": "The topological attack graph was successfully retrieved.",
+      "status": "OK",
+      "code": 200
+    },
+    "api": "3.2.0"
+  },
+  "header": {
+    "timestamp": 1588770220,
+    "msg_topic": "Internal.iRG.Test",
+    "cor_id": "",
+    "source": "iirs1234.cybertrust.eu",
+    "msg_id": "0d03ee04-a599-42dc-83ee-04a59952dc79"
+  }
+}
